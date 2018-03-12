@@ -2,3 +2,54 @@
   margin: 0;
   padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Merienda One', cursive;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+#mainNav {
+  background-color: #44006B;
+  }
+
+/*Changes mobile navbar*/
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #44006b;
+}
+
+/*Controls navbar title*/
+#mainNav .navbar-brand {
+  color: white;
+  padding: 5px;
+}
+
+/*Controls Navbar title rollover state*/
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: grey;
+}
+
+/*Controls link text*/
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 5px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/*nav bar rollover state*/
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: grey;
+}
+
+div.work{
+padding-top: 100px;
+}

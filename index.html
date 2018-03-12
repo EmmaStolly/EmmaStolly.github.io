@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One|Quicksand" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
 
@@ -13,12 +14,39 @@
     <body>
 
       <section id="home">
-        <h1>HELLO!</h1>
-        <div class="nav">
+        <!-- Navigation -->
+        <!--expands to fit larger screen sizes
+            fixed to top of screen so it will follow user-->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <!-- Container centers content-->
+      <!--<div class="container">-->
+      <!--Keeps navbar at top of the page at all times-->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><h1>Emma Stolly</h1></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button">
+        <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+    <!--  </div>-->
+    </nav>
       </section>
 
-      <section id="work">
+      <section id="workSection">
+        <div class="work">
         <h2> WORK </h2>
         <div class="gallery">
           <!--Pictures of work-->
@@ -31,18 +59,22 @@
         </div>
         <div class="smContact">
         </div>
+      </div>
       </section>
 
       <section id="about">
+
         <h2>ABOUT</h2>
         <p> About me text </p>
         <!-- Image of me -->
         <img src="#">
         <div class="smContact">
         </div>
+
       </section>
 
       <section id="contact">
+
         <h2>CONTACT</h2>
         <h3>SOCIAL MEDIA</h3>
         <!-- Add fontawesome icons for instagram, LinkedIn etc -->
@@ -52,6 +84,8 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/script.js"></script>
+
+
     </body>
   </div>
 
