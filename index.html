@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>My Portfolio</title>
+  <!--Links to outside source style sheets-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merienda+One|Quicksand" rel="stylesheet">
@@ -49,12 +50,13 @@
     </nav>
   </section>
 
-<div class="parallax">
-  <div class="hello animated grow">
-  <h1 class="text-uppercase">Hello!</h1>
-  <p class="text-uppercase">My name is Emma Stolliday</p>
-</div>
-</div>
+  <div class="parallax">
+    <div class="hello">
+      <!-- text uppercase sets all text to capital letters-->
+      <h1 class="text-uppercase">Hello!</h1>
+      <p class="text-uppercase">My name is Emma Stolliday</p>
+    </div>
+  </div>
 
   <section id="work">
     <div class="work">
@@ -62,6 +64,7 @@
 
       <div class="gallery">
         <!--Pictures of work-->
+        <!--Using bootstrap row/columns to evenly spread work throughout the page-->
         <div class="row container-fluid">
           <div class="col-4 annie">
             <img src="assets/img/annie.jpg">
@@ -88,69 +91,69 @@
     </div>
   </section>
 
-<div class="parallax2"></div>
+  <div class="parallax2"></div>
 
   <section id="about">
     <div class="about">
       <h2 class="text-uppercase">about</h2>
       <div class="row">
         <div class="aboutMe col-8">
-        <p> My name is Emma Stolliday. I'm an Illustrator and Web Designer. I'm currently a student at Plymouth University
-          studying Digital Media Design. I have a BTEC in Digital Media Design as well.</p>
+          <p> My name is Emma Stolliday. I'm an Illustrator and Web Designer. I'm currently a student at Plymouth University
+            studying Digital Media Design. I have a BTEC in Digital Media Design as well.</p>
 
-          <p>A big passion of mine is creating artwork. I love drawing in Photoshop with my Surface Pro,
-         but also enjoy creating traditional art of all forms, my favourite medium being watercolour.
-          My other hobbies include reading and gaming - specifically League of Legends (Which is why I have so much fan art of
-        the game!)</p>
-    </div>
-      <!-- Image of me -->
-      <img class="col-4" src="assets/img/aboutme.jpg">
-      <h6>By @mlmillustration</h6>
-    </div>
-  </div>
-  </section>
+            <p>A big passion of mine is creating artwork. I love drawing in Photoshop with my Surface Pro,
+              but also enjoy creating traditional art of all forms, my favourite medium being watercolour.
+              My other hobbies include reading and gaming - specifically League of Legends (Which is why I have so much fan art of
+              the game!)</p>
+            </div>
+            <!-- Image of me -->
+            <img class="col-4" src="assets/img/aboutme.jpg">
+            <h6>By @mlmillustration</h6>
+          </div>
+        </div>
+      </section>
 
-<div class="parallax3"></div>
+      <div class="parallax3"></div>
 
-<section id="contact">
-  <div class="container">
-    <h2 class="text-center pt-3">Contact Me</h2>
-    <hr>
-    <!--formspree.io - makes it so contact form emails you-->
-    <form action="https://formspree.io/stolliday.e@gmail.com" method="POST">>
-      <div class="form-group">
-        <!-- placeholder is the text in the box before you start typing-->
-        <!-- required means they can't submit the form without filling a box-->
-        <!--YOU MUST add a name attribute to each form part - or you will not recieve the message put in-->
-        <input class="form-control" id="name" type="text" placeholder="Name" required="required" name="name">
+      <section id="contact">
+        <div class="container">
+          <h2 class="text-center pt-3">Contact Me</h2>
+          <hr>
+          <!--formspree.io - makes it so contact form emails you-->
+          <form action="https://formspree.io/stolliday.e@gmail.com" method="POST">>
+            <div class="form-group">
+              <!-- placeholder is the text in the box before you start typing-->
+              <!-- required means they can't submit the form without filling a box-->
+              <!--YOU MUST add a name attribute to each form part - or you will not recieve the message put in-->
+              <input class="form-control" id="name" type="text" placeholder="Name" required="required" name="name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" name="email">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="phone" type="tel" placeholder="Phone Number"  name="number">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" name="message"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary w-100 mb-3" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+
+        <p class="text-uppercase pt-5">For frequent updates follow my Instagram and other social medias!</p>
+        <a class="" href="https://www.instagram.com/stollyart/">  <i class="fab fa-instagram"></i></a>
+        <a class="" href="https://www.linkedin.com/in/emma-stolliday/">  <i class="fab fa-linkedin-in"></i></a>
+        <a class="" href="https://twitter.com/NoobySaurusRex">  <i class="fab fa-twitter"></i></a>
       </div>
-      <div class="form-group">
-        <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" name="email">
-      </div>
-      <div class="form-group">
-        <input class="form-control" id="phone" type="tel" placeholder="Phone Number"  name="number">
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" name="message"></textarea>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary w-100 mb-3" type="submit">Send</button>
-      </div>
-    </form>
-  </div>
+    </section>
 
-      <p class="text-uppercase pt-5">For frequent updates follow my Instagram and other social medias!</p>
-    <a class="" href="https://www.instagram.com/stollyart/">  <i class="fab fa-instagram"></i></a>
-    <a class="" href="https://www.linkedin.com/in/emma-stolliday/">  <i class="fab fa-linkedin-in"></i></a>
-    <a class="" href="https://twitter.com/NoobySaurusRex">  <i class="fab fa-twitter"></i></a>
-    </div>
-  </section>
+    <footer><div class="footer"< </div> </footer>
 
-<footer><div class="footer"< </div> </footer>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
-
-</body>
-</html>
+    </body>
+    </html>

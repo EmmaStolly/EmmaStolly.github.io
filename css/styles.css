@@ -1,11 +1,14 @@
+/*Setting header font*/
 h1, h2, h3, h4, h5, h6{
   font-family: 'Merienda One', cursive;
 }
 
+/*Setting body font*/
 body{
   font-family: 'Quicksand', sans-serif;
   }
 
+/*Resets default margin/padding given by browser*/
   body, html{
     height: 100%;
     padding: 0;
@@ -13,6 +16,7 @@ body{
     text-align: center;
   }
 
+/*Nav bar colour and size*/
 #mainNav {
   background-color: #44006B;
   height: 75px;
@@ -58,48 +62,62 @@ body{
   text-decoration: none;
 }
 
+/*Changes colour of hover-line over nav links to white*/
 .hvr-overline-from-center::before{
-  /*Important means it will load first - AVOID USING*/
   background-color: white;
 }
 
 .parallax {
-    /* The image used */
+    /*Loads in background image for parallax*/
     background-image: url('../assets/img/annie.jpg');
+    /*Made slightly opaque so that the image doesn't overpower the text on top*/
     opacity: 0.4;
 
-    /* Full height */
+    /*Makes image take up full height of page*/
     height: 100%;
 
     /* Create the parallax scrolling effect */
+    /*Stops image from moving*/
     background-attachment: fixed;
+    /*Centers image*/
     background-position: center;
+    /*Only shows image once*/
     background-repeat: no-repeat;
+    /**/
     background-size: cover;
 }
 
+/*Sets padding, font colour and centers text*/
 .hello{
   padding-top: 15%;
   color: white;
   text-align: center;
 }
+
+/*Adds background behind text to make it more readable, sets font size and slightly opaque to allow image to show through, instead of blocking out big details*/
 .hello h1{
   font-size: 100px;
   background-color: #9e7fb0;
-  opacity: 0.8;
+  opacity: 0.9;
   }
 
+/*Sets paragraph font size and a background behind the text*/
   .hello p{
 font-size: 50px;
 background-color: #9e7fb0;
 opacity: 0.9;
   }
 
+/*Makes page fill the full height, centers title/text, Gives background to section*/
 #work{
   background-color: #9e7fb0;
   text-align: center;
   height: 100%;
 }
+
+/*Sets image sizes*/
+/*Instead of re-sizing images and making them destorted, using object-fit crops the image instead.
+This means I can add a feature to allow the full image to appear on interaction*/
 .gallery img{
   width: 250px;
   height: 340px;
@@ -107,11 +125,13 @@ opacity: 0.9;
   object-fit:cover;
 }
 
+/*Makes image change to full size when hovered over*/
 .gallery img:hover{
   width: 100%;
   height: 100%;
 }
 
+/*Repeat of .parallax (without opacity change)*/
 .parallax2 {
     /* The image used */
     background-image: url('../assets/img/gnar.jpg');
@@ -126,6 +146,7 @@ opacity: 0.9;
     background-size: cover;
 }
 
+/*Adds padding, white font, background colour*/
 #about{
   padding: 20px;
   height: 91%;
@@ -141,6 +162,7 @@ opacity: 0.9;
 #about h6{
   }
 
+/*Repeat of .parallax (without opacity)*/
 .parallax3 {
     /* The image used */
     background-image: url('../assets/img/portrait.jpg');
@@ -162,11 +184,13 @@ opacity: 0.9;
   background-color: #9e7fb0;
 }
 
+/*letter spacing to space out social media icons equally*/
 #contact a{
   text-align: center;
   letter-spacing: 100px;
 }
 
+/*The footer is in place to stop all the above divs from overlapping and disappearing under the nav bar*/
 .footer{
   height: 75px;
   }
