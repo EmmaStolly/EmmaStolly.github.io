@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6{
 
 body{
   font-family: 'Quicksand', sans-serif;
+  position: relative;
 }
 
 #mainNav {
@@ -31,11 +32,6 @@ body{
   padding: 5px;
 }
 
-/*Controls Navbar title rollover state*/
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: grey;
-}
-
 /*Controls link text*/
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
@@ -45,11 +41,16 @@ body{
   color: white;
 }
 
-/*nav bar rollover state*/
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: grey;
+.home, .about, .contact, .work{
+padding-top: 100px;
 }
 
-div.work{
-padding-top: 100px;
+.hvr-overline-from-center::before{
+  /*Important means it will load first - AVOID USING*/
+  background-color: white;
+}
+
+.work img{
+  width: 200px;
+  height: 340px;
 }
