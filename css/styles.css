@@ -1,25 +1,23 @@
-.container{
-  margin: 0;
-  padding: 0;
-}
-
 h1, h2, h3, h4, h5, h6{
   font-family: 'Merienda One', cursive;
 }
 
 body{
   font-family: 'Quicksand', sans-serif;
-  position: relative;
-}
+  }
+
+  body, html{
+    height: 100%;
+  }
 
 #mainNav {
   background-color: #44006B;
+  height: 75px;
   }
 
 /*Changes mobile navbar*/
 #mainNav .navbar-toggler {
   font-size: 12px;
-  right: 0;
   padding: 13px;
   text-transform: uppercase;
   border: 0;
@@ -34,15 +32,27 @@ body{
 
 /*Controls link text*/
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 95%;
   font-weight: 400;
-  padding: 5px;
-  letter-spacing: 1px;
+  padding: 10px;
+  letter-spacing: 5px;
   color: white;
 }
 
-.home, .about, .contact, .work{
-padding-top: 100px;
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
 .hvr-overline-from-center::before{
@@ -50,7 +60,77 @@ padding-top: 100px;
   background-color: white;
 }
 
-.work img{
-  width: 200px;
-  height: 340px;
+.parallax {
+    /* The image used */
+    background-image: url('../assets/img/annie.jpg');
+    opacity: 0.4;
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.hello{
+  padding-top: 15%;
+  color: white;
+  text-align: center;
+}
+.hello h1{
+  font-size: 100px;
+  background-color: #9e7fb0;
+  opacity: 0.8;
+  }
+
+  .hello p{
+font-size: 50px;
+background-color: #9e7fb0;
+opacity: 0.9;
+  }
+
+#work{
+  background-color: #9e7fb0;
+  text-align: center;
+}
+.work img{
+  width: 250px;
+  height: 340px;
+  padding: 10px;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../assets/img/gnar.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('../assets/img/portrait.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.footer{
+  height: 75px;
+  }
