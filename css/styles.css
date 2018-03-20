@@ -110,11 +110,18 @@ opacity: 0.9;
 /*Sets image sizes*/
 /*Instead of re-sizing images and making them destorted, using object-fit crops the image instead.
 This means I can add a feature to allow the full image to appear on interaction*/
-.gallery img{
+  .gallery img{
   width: 250px;
   height: 340px;
   padding: 10px;
   object-fit:cover;
+}
+
+@media (max-width: 575.98px){
+  .gallery img{
+    width: 100px;
+    height: 150px;
+  }
 }
 
 /*Repeat of .parallax (without opacity change)*/
@@ -193,7 +200,16 @@ This means I can add a feature to allow the full image to appear on interaction*
     .hello p{
       font-size: 20px;
     }
-
+    .about{
+      font-size: 14px;
+    }
+    .me{
+      width: 500px;
+      height: 700px;
+      }
+    .creditLink{
+      text-align: center;
+    }
     .contact{
       font-size: 1px;
     }
