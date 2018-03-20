@@ -9,6 +9,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merienda+One|Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="css/lightbox.css" rel="stylesheet">
   <link href="css/hover.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -22,10 +23,11 @@
       <!-- Container centers content-->
       <!--Keeps navbar at bottom of the page at all times-->
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><h1>Emma Stolly</h1></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button">
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <button type="button" class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" data-toggle="collapse" data-target="#mobileMenu">
+        <!--Creates an icon -->
+      <i class="fas fa-bars"></i>
+    </button>
+      <div class="collapse navbar-collapse" id="mobileMenu">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger hvr-overline-from-center" href="#work">Work</a>
@@ -60,31 +62,32 @@
 
   <section id="work">
     <div class="work">
-      <h2 class="text-uppercase"> work </h2>
+      <h2 class="text-uppercase pt-3"> work </h2>
 
       <div class="gallery">
         <!--Pictures of work-->
         <!--Using bootstrap row/columns to evenly spread work throughout the page-->
-        <div class="row container-fluid">
-          <div class="col-4 annie">
-            <img src="assets/img/annie.jpg">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 annie">
+          <!--  <img src="assets/img/annie.jpg">-->
+          <a href="assets/img/annie.jpg" data-lightbox="annie" data-title="My caption"><img src="assets/img/annie.jpg"></a>
           </div>
-          <div class="col-4 gnar">
-            <img src="assets/img/gnar.jpg">
+          <div class="col-lg-4 col-sm-4 gnar">
+              <a href="assets/img/gnar.jpg" data-lightbox="gnar" data-title="My caption"><img src="assets/img/gnar.jpg"></a>
           </div>
-          <div class="col-4 elf">
-            <img src="assets/img/elf.jpg">
+          <div class="col-lg-4 col-sm-4 elf">
+            <a href="assets/img/elf.jpg" data-lightbox="elf" data-title="My caption"><img src="assets/img/elf.jpg"></a>
           </div>
         </div>
-        <div class="row container-fluid">
-          <div class="col-4 bluehair">
-            <img src="assets/img/bluehair.jpg">
+        <div class="row">
+          <div class="col-lg-4 col-sm-2 bluehair">
+              <a href="assets/img/bluehair.jpg" data-lightbox="bluehair" data-title="My caption"><img src="assets/img/bluehair.jpg"></a>
           </div>
-          <div class="col-4 portrait">
-            <img src="assets/img/portrait.jpg">
+          <div class="col-lg-4 col-sm-2 portrait">
+            <a href="assets/img/portrait.jpg" data-lightbox="portrait" data-title="My caption"><img src="assets/img/portrait.jpg"></a>
           </div>
-          <div class="col-4 sideportrait">
-            <img src="assets/img/sideportrait.jpg">
+          <div class="col-lg-4 col-sm-2 sideportrait">
+              <a href="assets/img/sideportrait.jpg" data-lightbox="sideportrait" data-title="My caption"><img src="assets/img/sideportrait.jpg"></a>
           </div>
         </div>
       </div>
@@ -95,10 +98,10 @@
 
   <section id="about">
     <div class="about">
-      <h2 class="text-uppercase">about</h2>
-      <div class="row">
-        <div class="aboutMe col-8">
-          <p> My name is Emma Stolliday. I'm an Illustrator and Web Designer. I'm currently a student at Plymouth University
+      <h2 class="text-uppercase pt-4">about me</h2>
+        <div class="aboutMe">
+          <div class="container">
+          <p class="pt-4"> My name is Emma Stolliday. I'm an Illustrator and Web Designer. I'm currently a student at Plymouth University
             studying Digital Media Design. I have a BTEC in Digital Media Design as well.</p>
 
             <p>A big passion of mine is creating artwork. I love drawing in Photoshop with my Surface Pro,
@@ -106,9 +109,11 @@
               My other hobbies include reading and gaming - specifically League of Legends (Which is why I have so much fan art of
               the game!)</p>
             </div>
-            <!-- Image of me -->
-            <img class="col-4" src="assets/img/aboutme.jpg">
-            <h6>By @mlmillustration</h6>
+            </div>
+            <div class="pt-3">
+            <img class="" src="assets/img/aboutme.jpg">
+            <div class="creditLink pt-1">
+            <a href="https://websta.me/n/mlm_illustration?max_id=1715390217143240775_4984030229">By mlmillustration</a>
           </div>
         </div>
       </section>
@@ -116,7 +121,7 @@
       <div class="parallax3"></div>
 
       <section id="contact">
-        <div class="container">
+        <div class="container contact">
           <h2 class="text-center pt-3">Contact Me</h2>
           <hr>
           <!--formspree.io - makes it so contact form emails you-->
@@ -142,15 +147,18 @@
           </form>
         </div>
 
-        <p class="text-uppercase pt-5">For frequent updates follow my Instagram and other social medias!</p>
+        <p class="text-uppercase pt-md-5">For frequent updates follow my Instagram and other social medias!</p>
+        <div class="socials">
         <a class="" href="https://www.instagram.com/stollyart/">  <i class="fab fa-instagram"></i></a>
         <a class="" href="https://www.linkedin.com/in/emma-stolliday/">  <i class="fab fa-linkedin-in"></i></a>
         <a class="" href="https://twitter.com/NoobySaurusRex">  <i class="fab fa-twitter"></i></a>
       </div>
+      </div>
     </section>
 
-    <footer><div class="footer"< </div> </footer>
+    <footer><div class="footer"> </div> </footer>
 
+      <script src="js/lightbox-plus-jquery.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/script.js"></script>

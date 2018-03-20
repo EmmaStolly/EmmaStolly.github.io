@@ -14,6 +14,7 @@ body{
     padding: 0;
     margin: 0;
     text-align: center;
+    width: 100%;
   }
 
 /*Nav bar colour and size*/
@@ -21,15 +22,6 @@ body{
   background-color: #44006B;
   height: 75px;
   }
-
-/*Changes mobile navbar*/
-#mainNav .navbar-toggler {
-  font-size: 12px;
-  padding: 13px;
-  text-transform: uppercase;
-  border: 0;
-  background-color: #44006b;
-}
 
 /*Controls navbar title*/
 #mainNav .navbar-brand {
@@ -125,12 +117,6 @@ This means I can add a feature to allow the full image to appear on interaction*
   object-fit:cover;
 }
 
-/*Makes image change to full size when hovered over*/
-.gallery img:hover{
-  width: 100%;
-  height: 100%;
-}
-
 /*Repeat of .parallax (without opacity change)*/
 .parallax2 {
     /* The image used */
@@ -155,12 +141,11 @@ This means I can add a feature to allow the full image to appear on interaction*
 }
 
 #about img{
-  height: 550px;
-  width: 250px;
+  height: 20%;
+  width: 20%;
 }
 
-#about h6{
-  }
+#about a{}
 
 /*Repeat of .parallax (without opacity)*/
 .parallax3 {
@@ -178,7 +163,7 @@ This means I can add a feature to allow the full image to appear on interaction*
 }
 
 #contact{
-  padding: 20px;
+  text-align:center;
   height: 91%;
   color: white;
   background-color: #9e7fb0;
@@ -193,4 +178,24 @@ This means I can add a feature to allow the full image to appear on interaction*
 /*The footer is in place to stop all the above divs from overlapping and disappearing under the nav bar*/
 .footer{
   height: 75px;
+  }
+
+  @media (max-width: 575.98px){
+    .navbar-brand h1{
+      font-size: 20px;
+    }
+    .parallax{
+      height:30%;
+    }
+    .hello h1{
+      font-size: 30px;
+    }
+    .hello p{
+      font-size: 20px;
+    }
+
+    .contact{
+      font-size: 1px;
+    }
+
   }
