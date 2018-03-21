@@ -104,25 +104,18 @@ opacity: 0.9;
 #work{
   background-color: #9e7fb0;
   text-align: center;
-  height: 100%;
 }
 
 /*Sets image sizes*/
 /*Instead of re-sizing images and making them destorted, using object-fit crops the image instead.
 This means I can add a feature to allow the full image to appear on interaction*/
   .gallery img{
-  width: 250px;
-  height: 340px;
+    height: 325px;
+    width: 250px;
   padding: 10px;
   object-fit:cover;
 }
 
-@media (max-width: 575.98px){
-  .gallery img{
-    width: 100px;
-    height: 150px;
-  }
-}
 
 /*Repeat of .parallax (without opacity change)*/
 .parallax2 {
@@ -145,6 +138,7 @@ This means I can add a feature to allow the full image to appear on interaction*
   height: 91%;
   color: white;
   background-color: #9e7fb0;
+  font-size: 20px;
 }
 
 #about img{
@@ -179,8 +173,14 @@ This means I can add a feature to allow the full image to appear on interaction*
 /*letter spacing to space out social media icons equally*/
 #contact a{
   text-align: center;
-  letter-spacing: 100px;
+  letter-spacing: 30px;
+  color: white;
 }
+
+#contact a:hover{
+  color: #007bff;
+}
+
 
 /*The footer is in place to stop all the above divs from overlapping and disappearing under the nav bar*/
 .footer{
@@ -212,6 +212,10 @@ This means I can add a feature to allow the full image to appear on interaction*
     }
     .contact{
       font-size: 1px;
+    }
+    img{
+      width: 50%;
+      height: 50%;
     }
 
   }
