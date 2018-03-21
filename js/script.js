@@ -27,6 +27,14 @@ function removeBounce(e){
 this.classList.remove('animated', 'bounce');
 }
 
+$('#mobileMenu').on('show.bs.collapse', function(){
+  $('#mainNav').addClass('fixed-bottom-open');
+})
+
+$('#mobileMenu').on('hide.bs.collapse', function(){
+  $('#mainNav').removeClass('fixed-bottom-open');
+})
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
