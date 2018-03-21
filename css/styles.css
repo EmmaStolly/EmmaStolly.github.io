@@ -135,16 +135,25 @@ This means I can add a feature to allow the full image to appear on interaction*
 
 /*Adds padding, white font, background colour*/
 #about{
-  padding: 20px;
+
   height: 91%;
   color: white;
   background-color: #9e7fb0;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 #about img{
   height: 20%;
   width: 20%;
+}
+
+.link {
+  font-size: 10px;
+  color: white;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 /*Repeat of .parallax (without opacity)*/
@@ -177,13 +186,24 @@ This means I can add a feature to allow the full image to appear on interaction*
 }
 
 #contact a:hover{
-  color: #007bff;
+  color: #44006b;
+}
+
+.hvr-shutter-in-horizontal{
+  background-color: #44006b;
+  color: black;
+}
+
+.hvr-shutter-in-horizontal::before{
+background-color:white;
+color: white;
 }
 
 
 /*The footer is in place to stop all the above divs from overlapping and disappearing under the nav bar*/
 .footer{
   height: 75px;
+  background-color: #44006b;
   }
 
   @media (max-width: 575.98px){
@@ -209,9 +229,11 @@ This means I can add a feature to allow the full image to appear on interaction*
     .creditLink{
       text-align: center;
     }
-    .parallax{
-      height: 50%;
-      object-fit:cover;
+    .hvr-shutter-in-horizontal::before{
+    background-color:#44006b;
+    }
+    .hvr-shutter-in-horizontal{
+      color:white;  
     }
 
 

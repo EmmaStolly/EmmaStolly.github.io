@@ -1,3 +1,13 @@
+//Easter Egg - Clicking 'Hello my name is Emma Stolliday' triggers fontalicious (Can only be done once)
+//Variable that looks for anything in html with the class .hello
+const hello = document.querySelector('.hello');
+//Listens to hello, when mouse is clicked triggers fontalicious
+hello.addEventListener('mousedown', addFont);
+function addFont(e){
+  //add animated bounce to navbar-brand class
+  this.classList.add('animated', 'fontalicious');
+}
+
 //Makes 'Emma Stolly' on navbar bounce when hovered over
 //Variable that looks for anything in html with the class .navbar-brand
 const navBrand = document.querySelector('.navbar-brand');
@@ -12,7 +22,6 @@ function addBounce(e){
   this.classList.add('animated', 'bounce');
 }
 
-//e = events
 function removeBounce(e){
 //remove animated bounce from navbar-brand class
 this.classList.remove('animated', 'bounce');
