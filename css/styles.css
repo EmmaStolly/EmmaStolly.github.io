@@ -209,9 +209,6 @@ This means I can add a feature to allow the full image to appear on interaction*
     .creditLink{
       text-align: center;
     }
-    .contact{
-      font-size: 1px;
-    }
     .parallax{
       height: 50%;
       object-fit:cover;
