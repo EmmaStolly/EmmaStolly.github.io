@@ -79,6 +79,7 @@ body{
     background-size: cover;
 }
 
+
 /*Sets padding, font colour and centers text*/
 .hello{
   padding-top: 15%;
@@ -146,8 +147,6 @@ This means I can add a feature to allow the full image to appear on interaction*
   width: 20%;
 }
 
-#about a{}
-
 /*Repeat of .parallax (without opacity)*/
 .parallax3 {
     /* The image used */
@@ -213,9 +212,10 @@ This means I can add a feature to allow the full image to appear on interaction*
     .contact{
       font-size: 1px;
     }
-    img{
-      width: 50%;
+    .parallax{
       height: 50%;
+      object-fit:cover;
     }
+
 
   }
