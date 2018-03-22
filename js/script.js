@@ -27,7 +27,8 @@ function removeBounce(e){
 this.classList.remove('animated', 'bounce');
 }
 
-//Looks for when site is in mobile menu and open
+//Watches for when the site is in mobile version and when menu is opened
+//When menu is opened, removes the class keeping it at the bottom and moves it to the top of the page
 $('#mobileMenu').on('show.bs.collapse', function(){
   $('#mainNav').addClass('fixed-bottom-open');
 })
