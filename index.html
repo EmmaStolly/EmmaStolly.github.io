@@ -22,32 +22,33 @@
     fixed to top of screen so it will follow user
     navbar-expand-lg makes the navbar grow when on a bigger screen size. It will no longer have the icon to open it-->
     <nav class="navbar navbar-expand-lg fixed-bottom row" id="mainNav">
-      <!-- Container centers content-->
       <!--Keeps navbar at bottom of the page at all times-->
       <a class="navbar-brand js-scroll-trigger"><h1 class="pl-2">Emma Stolly</h1></a>
-      <button type="button" class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" data-toggle="collapse" data-target="#mobileMenu">
+      <button type="button" class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded"data-toggle="collapse" data-target="#mobileMenu">
         <!--Creates an icon -->
       <i class="fas fa-bars"></i>
     </button>
+    <!--Makes Nav bar collapse into an icon -->
       <div class="collapse navbar-collapse" id="mobileMenu">
         <ul class="navbar-nav text-uppercase ml-auto ">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger hvr-overline-from-center" href="#work">Work</a>
+            <!-- hvr-overline is an animation from hover.css-->
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink1" href="#work">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger hvr-overline-from-center" href="#about">About Me</a>
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink2" href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger hvr-overline-from-center" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink3" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger hvr-overline-from-center" href="https://www.instagram.com/stollyart/"><i class="fab fa-instagram"></i></a>
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink4" href="https://www.instagram.com/stollyart/"><i class="fab fa-instagram"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger hvr-overline-from-center" href="https://www.linkedin.com/in/emma-stolliday/"><i class="fab fa-linkedin-in"></i></i></a>
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink5" href="https://www.linkedin.com/in/emma-stolliday/"><i class="fab fa-linkedin-in"></i></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger hvr-overline-from-center pr-3" href="https://twitter.com/NoobySaurusRex">  <i class="fab fa-twitter"></i></a>
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center pr-3" id="navLink6" href="https://twitter.com/NoobySaurusRex">  <i class="fab fa-twitter"></i></a>
           </li>
         </ul>
       </div>
@@ -64,14 +65,15 @@
 
   <section id="work">
     <div class="work">
+      <!-- Adding wobble animation to page title-->
       <h2 class="text-uppercase pt-3 hvr-wobble-top"> work </h2>
-
+      <!-- Bootstrap container centers the content-->
       <div class="gallery container">
         <!--Pictures of work-->
         <!--Using bootstrap row/columns to evenly spread work throughout the page-->
         <div class="row">
           <div class="col-lg-4 col-sm-4 annie">
-          <!--  <img src="assets/img/annie.jpg">-->
+          <!-- Used Lightbox to allow full images to be shown - also added a caption through this-->
           <a class="hvr-trim" href="assets/img/annie.jpg" data-lightbox="annie" data-title="Reverse Annie from League of Legends, Created in Photoshop on a Surface Pro 4"><img src="assets/img/annie.jpg"></a>
           </div>
           <div class="col-lg-4 col-sm-4 gnar">
@@ -114,10 +116,11 @@
             </div>
             <div class="pt-2 me">
             <img class="" src="assets/img/aboutme.jpg">
-          </div>
+
             <div class="pb-1 hvr-pulse-grow">
             <a class="link" href="https://websta.me/n/mlm_illustration?max_id=1715390217143240775_4984030229">By mlmillustration</a>
           </div>
+        </div>
         </div>
       </section>
 
@@ -162,6 +165,7 @@
 
     <footer><div class="footer"> </div> </footer>
 
+<!-- Bringing in all js files-->
       <script src="js/lightbox-plus-jquery.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

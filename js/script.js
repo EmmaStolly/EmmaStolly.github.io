@@ -27,6 +27,7 @@ function removeBounce(e){
 this.classList.remove('animated', 'bounce');
 }
 
+//Looks for when site is in mobile menu and open
 $('#mobileMenu').on('show.bs.collapse', function(){
   $('#mainNav').addClass('fixed-bottom-open');
 })
@@ -34,6 +35,8 @@ $('#mobileMenu').on('show.bs.collapse', function(){
 $('#mobileMenu').on('hide.bs.collapse', function(){
   $('#mainNav').removeClass('fixed-bottom-open');
 })
+
+//Adding backgrounds to mobile nav
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
