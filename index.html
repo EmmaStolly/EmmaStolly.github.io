@@ -1,20 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Test using Three.js to build a VR experience</title>
-	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
-    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> -->
-
-	<script src="js/three.js"></script>
-	<script src="js/StereoEffect.js"></script>
-	<script src="js/DeviceOrientationControls.js"></script>
-	<script src="js/OrbitControls.js"></script>
-
-	<script src="index.js"></script>
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>My Portfolio</title>
+  <!--Links to outside source style sheets-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One|Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/obnoxious.css" rel="stylesheet">
+  <link href="css/hover.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-	<div id="container"></div>
-</body>
-</html>
+  <section id="navigation">
+    <!-- Navigation -->
+    <!--expands to fit larger screen sizes
+    fixed to top of screen so it will follow user
+    navbar-expand-lg makes the navbar grow when on a bigger screen size. It will no longer have the icon to open it-->
+    <nav class="navbar navbar-expand-lg fixed-bottom row" id="mainNav">
+      <!--Keeps navbar at bottom of the page at all times-->
+      <a class="navbar-brand js-scroll-trigger"><h1 class="pl-2">Emma Stolly</h1></a>
+      <button type="button" class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded"data-toggle="collapse" data-target="#mobileMenu">
+        <!--Creates an icon -->
+      <i class="fas fa-bars"></i>
+    </button>
+    <!--Makes Nav bar collapse into an icon -->
+      <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav text-uppercase ml-auto ">
+          <li class="nav-item">
+            <!-- hvr-overline is an animation from hover.css-->
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink1" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink2" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink3" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink4" href="https://www.instagram.com/stollyart/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center" id="navLink5" href="https://www.linkedin.com/in/emma-stolliday/"><i class="fab fa-linkedin-in"></i></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger hvr-overline-from-center pr-3" id="navLink6" href="https://twitter.com/NoobySaurusRex">  <i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <div class="parallax">
+    <div class="hello">
+      <!-- text uppercase sets all text to capital letters-->
+      <h1 class="text-uppercase">Hello!</h1>
+      <p class="text-uppercase">My name is Emma Stolliday</p>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="work">
+      <!-- Adding wobble animation to page title-->
+      <h2 class="text-uppercase pt-3 hvr-wobble-top"> work </h2>
+      <!-- Bootstrap container centers the content-->
+      <div class="gallery container">
+        <!--Pictures of work-->
+        <!--Using bootstrap row/columns to evenly spread work throughout the page-->
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 annie">
+          <!-- Used Lightbox to allow full images to be shown - also added a caption through this-->
+          <a class="hvr-trim" href="assets/img/annie.jpg" data-lightbox="annie" data-title="Reverse Annie from League of Legends, Created in Photoshop on a Surface Pro 4"><img src="assets/img/annie.jpg"></a>
+          </div>
+          <div class="col-lg-4 col-sm-4 gnar">
+              <a class="hvr-trim" href="assets/img/gnar.jpg" data-lightbox="gnar" data-title="Snow Day Gnar from League of Legends, Created in Photoshop on a Surface Pro 4"><img src="assets/img/gnar.jpg"></a>
+          </div>
+          <div class="col-lg-4 col-sm-4 BandIt">
+            <a class="hvr-trim" href="assets/img/bandit.jpg" data-lightbox="elf" data-title="A project for my 'Advanced Web Technologies' module where I experimented with react and APIs. You are able to search
+            for artists and display their upcoming events. Full website here: http://dat504webtech.appspot.com/"><img src="assets/img/bandit.jpg"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 fish">
+              <a class="hvr-trim" href="assets/gif/fish.gif" data-lightbox="Fish" data-title="A quick animated 3D model of a fish, created for my 'Digital Media Design' module. Created in blender."><img src="assets/gif/fish.gif"></a>
+          </div>
+          <div class="col-lg-4 col-sm-4 portrait">
+            <a class="hvr-trim" href="assets/img/portrait.jpg" data-lightbox="portrait" data-title="Girl Portrait, Created using Winsor & Newton Cotman Watercolours"><img src="assets/img/portrait.jpg"></a>
+          </div>
+          <div class="col-lg-4 col-sm-4 sideportrait">
+              <a class="hvr-trim" href="assets/img/portrait2.jpg" data-lightbox="sideportrait" data-title="Girl Portrait, Created with Daniel Smith Watercolours"><img src="assets/img/portrait2.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax2"></div>
+
+  <section id="about">
+    <div class="about">
+      <h2 class="text-uppercase pt-3 hvr-wobble-top">about me</h2>
+        <div class="aboutMe">
+          <div class="container">
+          <p class="pt-4"> I'm currently a 20 year old student studying Digital Media Design at the University
+            of Plymouth. I have a BTEC in Digital Media Design as well.</p>
+
+            <p>A big passion of mine is creating artwork. I love drawing in Photoshop with my Surface Pro,
+              but also enjoy creating traditional art of all forms, my favourite medium being watercolour.
+              My other hobbies include reading and gaming - specifically League of Legends (Which is why I have so much fan art of
+              the game!)</p>
+            </div>
+            </div>
+            <div class="pt-2 me">
+            <img class="" src="assets/img/aboutme.jpg">
+
+            <div class="pb-1 hvr-pulse-grow">
+            <a class="link" href="https://websta.me/n/mlm_illustration?max_id=1715390217143240775_4984030229">By mlmillustration</a>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <div class="parallax3"></div>
+
+      <section id="contact">
+        <div class="container contact">
+          <h2 class="text-center pt-3 hvr-wobble-top">Contact Me</h2>
+          <hr>
+          <!--formspree.io - makes it so contact form emails you-->
+          <form action="https://formspree.io/stolliday.e@gmail.com" method="POST">
+            <div class="form-group">
+              <!-- placeholder is the text in the box before you start typing-->
+              <!-- required means they can't submit the form without filling a box-->
+              <!--YOU MUST add a name attribute to each form part - or you will not recieve the message put in-->
+              <input class="form-control" id="name" type="text" placeholder="Name" required="required" name="name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" name="email">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="phone" type="tel" placeholder="Phone Number"  name="number">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" name="message"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn w-100 mb-3 hvr-shutter-in-horizontal" type="submit">Send</button>
+            </div>
+          </form>
+
+
+        <p class="text-uppercase pt-lg-5">For updates follow my Instagram and other social medias!</p>
+        <div class="socials">
+        <a class="hvr-pulse" href="https://www.instagram.com/stollyart/">  <i class="fab fa-instagram"></i></a>
+        <a class="hvr-pulse" href="https://www.linkedin.com/in/emma-stolliday/">  <i class="fab fa-linkedin-in"></i></a>
+        <a class="hvr-pulse" href="https://twitter.com/NoobySaurusRex">  <i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <footer><div class="footer"> </div> </footer>
+
+<!-- Bringing in all js files-->
+      <script src="js/lightbox-plus-jquery.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
+
+    </body>
+    </html>
