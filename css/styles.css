@@ -151,8 +151,8 @@ This means I can add a feature to allow the full image to appear on interaction*
 
 /*Setting image size*/
 #about img{
-  height: 15%;
-  width: 15%;
+  height: 13%;
+  width: 13%;
 }
 
 /*Removes default blue colour and makes it white*/
