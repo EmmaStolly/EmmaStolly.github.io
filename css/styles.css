@@ -107,15 +107,18 @@ opacity: 0.9;
 
 /*Makes page fill the full height, centers title/text, Gives background to section*/
 #work{
+  padding-top: 20px;
+  height: 140%;
   background-color: #9e7fb0;
   text-align: center;
+  color: white;
 }
 
 /*Sets image sizes*/
 /*Instead of re-sizing images and making them destorted, using object-fit crops the image instead.
 This means I can add a feature to allow the full image to appear on interaction*/
   .gallery img{
-    height: 325px;
+    height: 301px;
     width: 250px;
   padding: 10px;
   object-fit:cover;
@@ -148,8 +151,8 @@ This means I can add a feature to allow the full image to appear on interaction*
 
 /*Setting image size*/
 #about img{
-  height: 20%;
-  width: 20%;
+  height: 15%;
+  width: 15%;
 }
 
 /*Removes default blue colour and makes it white*/
