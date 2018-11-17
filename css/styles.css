@@ -260,10 +260,10 @@ color: white;
     .about{
       font-size: 14px;
     }
-    #about img{
-      height: 30%;
-      width: 30%;
-    }
+    /* #about img{
+      height: %;
+      width: 15%;
+    } */
     /*Makes send button more readable when in mobile version (As there is no hover state on a mobile the button looks weird)*/
     .hvr-shutter-in-horizontal::before{
     background-color:#44006b;
