@@ -108,7 +108,7 @@ opacity: 0.9;
 /*Makes page fill the full height, centers title/text, Gives background to section*/
 #work{
   padding-top: 20px;
-  height: 140%;
+  height: 1000px;
   background-color: #9e7fb0;
   text-align: center;
   color: white;
@@ -146,12 +146,6 @@ This means I can add a feature to allow the full image to appear on interaction*
   color: white;
   background-color: #9e7fb0;
   font-size: 20px;
-}
-
-/*Setting image size*/
-#about img{
-  height: 13%;
-  width: 13%;
 }
 
 /*Removes default blue colour and makes it white*/
@@ -228,7 +222,26 @@ color: white;
   bottom: 100%;
   top: 0;
 }
+  }
+  @media (min-width: 1200px){
+    #about img{
+    height: 500px;
+    width: 350px;
+    }
+  }
+  @media (min-width: 992px){
+    #about img{
+    height: 500px;
+    width: 350px;
+    }
+  }
 
+  @media (min-width:  px){
+    #about img{
+    height: 400px;
+    width: 275px;
+    }
+  }
 /*Media Query to adjust styling for mobile version*/
   @media (max-width: 575.98px){
     /*Adds a background to the navlinks to make them readable*/
