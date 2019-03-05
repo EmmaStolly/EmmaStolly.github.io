@@ -225,23 +225,23 @@ color: white;
   }
   @media (min-width: 1200px){
     #about img{
-    height: 500px;
+    height: 300px;
     width: 350px;
     }
   }
   @media (min-width: 992px){
     #about img{
-    height: 500px;
+    height: 300px;
     width: 350px;
     }
   }
 
-  @media (min-width:  px){
+  /* @media (min-width:  px){
     #about img{
-    height: 400px;
-    width: 275px;
+    height: 200px;
+    width: 175px;
     }
-  }
+  } */
 /*Media Query to adjust styling for mobile version*/
   @media (max-width: 575.98px){
     /*Adds a background to the navlinks to make them readable*/
