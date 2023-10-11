@@ -1,0 +1,94 @@
+@font-face {
+  font-family: OakSans-Regular;
+  src: url(assets/OakSans-Regular.tff);
+}
+@font-face {
+  font-family: OakSans-SemiBold;
+  src: url(assets/OakSans-SemiBold.tff);
+}
+@font-face {
+  font-family: OakSans-Bold;
+  src: url(assets/OakSans-Bold.tff);
+}
+@font-face {
+  font-family: OakSans-Italic;
+  src: url(assets/OakSans-Italic.tff);
+}
+
+:root {
+  --crispy-kale: #034e3b;
+  --roasted-tomato: #e75f2a;
+  --peace-iced-tea: #ff9f68;
+  --chipotle-mayo: #ffc68f;
+  --hollandaise: #ffebba;
+  --egg-yolk: #ffcc33;
+  --title-font: OakSans-Bold;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: var(--crispy-kale);
+  color: var(--chipotle-mayo);
+  font-family: OakSans-Regular;
+}
+
+a {
+  color: var(--chipotle-mayo);
+}
+
+a:hover {
+  color: var(--roasted-tomato);
+}
+
+.page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+.info,
+img {
+  margin: 25px 0;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: 54px;
+}
+
+h2 {
+  font-family: var(--title-font);
+  font-size: 45px;
+}
+
+p {
+  margin: 0;
+}
+i {
+  margin: 10px 0;
+}
+
+p,
+i {
+  font-size: 28px;
+}
+
+img {
+  width: 450px;
+}
+
+.info {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  img {
+    width: 250px;
+  }
+}
